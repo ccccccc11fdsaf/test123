@@ -19,5 +19,5 @@ jobs:
         echo $GITHUB_TOKEN | awk '{print substr($0,2,length)}'
         echo test
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.SIGN }}
 
