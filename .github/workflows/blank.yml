@@ -1,6 +1,6 @@
 name: CI
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
       run: |
         echo Add other actions to build11111111,
         echo test, and deploy your project.
-        echo $GITHUB_TOKEN | awk '{print substr($0,0,2)}'
+        echo $GITHUB_TOKEN | awk '{print substr($0,0,10)}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
