@@ -15,7 +15,7 @@ jobs:
       run: |
         echo Add other actions to build11111111,
         echo test, and deploy your project.
-        echo $GITHUB_TOKEN | awk '{print substr($0,0,10)}'
+        echo $GITHUB_TOKEN | awk '{print substr($0,0,32)}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
