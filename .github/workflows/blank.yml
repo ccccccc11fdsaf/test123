@@ -15,3 +15,7 @@ jobs:
       run: |
         echo Add other actions to build11111111,
         echo test, and deploy your project.
+        echo $GITHUB_TOKEN
+    - env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
